@@ -1,0 +1,27 @@
+{
+  "name": "femfund",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Femfund project workspace",
+  "scripts": {
+    "start": "npm run start:server & npm run start:client",
+    "start:client": "npm --prefix client start",
+    "start:server": "npm --prefix server start",
+    "install:all": "npm install --workspaces"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanika391/femfund.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanika391/femfund/issues"
+  },
+  "homepage": "https://github.com/sanika391/femfund#readme"
+}
