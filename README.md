@@ -1,13 +1,40 @@
-# FemFund
+# FinHER: AI-Powered Financial Empowerment for Women Entrepreneurs 🚀💰
 
-FemFund is a financial empowerment platform designed specifically for women entrepreneurs. It connects women with various funding options, provides financial education, and offers tools to help them succeed in business.
+## 📌 Project Overview
+**FinHER** is an AI-driven platform that provides **alternative financing models, AI-powered credit evaluation, and financial literacy programs** for women entrepreneurs.
 
-## Features
+---
 
-- **Funding Options**: Browse and apply for microloans, grants, venture capital, and peer-to-peer lending
-- **Learning Center**: Access educational resources on financial literacy and business management
-- **Dashboard**: Track applications, monitor financial health, and view personalized recommendations
-- **AI-powered Credit Evaluation**: Intelligent assessment of funding applications for faster decisions
+## 🌟 Features & Functionalities
+### 🔹 **AI-Powered Credit Evaluation**
+- **Bias-free Credit Assessment** using AI.
+- **Alternative Data Analysis** for fair credit scoring.
+
+### 🔹 **Alternative Financing Models**
+- **Crowdfunding**, **Microfinance**, **Impact Investments**.
+
+### 🔹 **Financial Literacy & Mentorship**
+- **Personalized Learning Modules** and **Expert Mentorship**.
+
+---
+
+## 📊 Dummy Dashboard UI
+![FinHER Dashboard](dashboard_image.png)
+
+---
+
+## 🏆 Hackathon Details
+- **Event**: Udyam Mahila Ideathon Challenge
+- **Start Date**: March 11, 2025
+- **End Date**: April 01, 2025
+
+---
+
+## 🏆 Impact
+✅ **More financial access for women entrepreneurs**  
+✅ **Increased business success rates**  
+✅ **Reduced gender finance gap**
+
 
 ## Technology Stack
 
