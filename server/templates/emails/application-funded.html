@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funding Disbursed</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .header {
+      background: linear-gradient(to right, #f2994a, #f2c94c);
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .header img {
+      width: 150px;
+      margin-bottom: 15px;
+    }
+    .header h1 {
+      color: white;
+      margin: 0;
+      font-size: 28px;
+      font-weight: 600;
+    }
+    .content {
+      padding: 30px;
+    }
+    .content h2 {
+      margin-top: 0;
+      color: #f2994a;
+      font-size: 22px;
+    }
+    .content p {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    .celebration {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .celebration img {
+      max-width: 200px;
+    }
+    .fund-details {
+      background-color: #fff9eb;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+      border: 1px solid #fdecc8;
+    }
+    .fund-details h3 {
+      margin-top: 0;
+      color: #f2994a;
+    }
+    .detail-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #fef2d9;
+    }
+    .detail-row:last-child {
+      border-bottom: none;
+    }
+    .detail-label {
+      font-weight: bold;
+      color: #666;
+    }
+    .detail-value {
+      color: #333;
+      font-weight: 500;
+    }
+    .button {
+      display: inline-block;
+      background-color: #f2994a;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 12px 30px;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 16px;
+      margin: 20px 0;
+    }
+    .button:hover {
+      background-color: #e67e22;
+    }
+    .steps-section {
+      margin: 30px 0;
+    }
+    .step {
+      background: #f8fbff;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+    .step-title {
+      font-weight: bold;
+      color: #f2994a;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+    }
+    .step-title svg {
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+    .support-section {
+      background-color: #f0f9ff;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    .support-section h3 {
+      margin-top: 0;
+      color: #3498db;
+    }
+    .footer {
+      background-color: #f5f5f5;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://via.placeholder.com/150x50?text=FemFund" alt="FemFund Logo">
+      <h1>Your Funds Have Been Disbursed!</h1>
+    </div>
+    <div class="content">
+      <h2>Fantastic News, {{firstName}}!</h2>
+      <p>We're excited to inform you that your approved funding has been successfully disbursed to your designated account. This marks an important milestone in your entrepreneurial journey, and we're thrilled to support your business growth!</p>
+      
+      <div class="celebration">
+        <img src="https://via.placeholder.com/200x200?text=Celebration" alt="Celebration Graphic">
+      </div>
+      
+      <div class="fund-details">
+        <h3>Funding Details</h3>
+        <div class="detail-row">
+          <span class="detail-label">Application ID:</span>
+          <span class="detail-value">{{applicationId}}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Funding Type:</span>
+          <span class="detail-value">{{fundingType}}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Funding Name:</span>
+          <span class="detail-value">{{fundingName}}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Amount Disbursed:</span>
+          <span class="detail-value">${{amount}}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Disbursement Date:</span>
+          <span class="detail-value">{{statusDate}}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Recipient Account:</span>
+          <span class="detail-value">•••• •••• •••• 1234</span>
+        </div>
+      </div>
+      
+      <p>The funds should appear in your account within 1-2 business days, depending on your bank's processing time.</p>
+      
+      <div class="steps-section">
+        <h3>Your Next Steps</h3>
+        
+        <div class="step">
+          <div class="step-title">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 16.2L4.8 12L3.4 13.4L9 19L21 7L19.6 5.6L9 16.2Z" fill="#f2994a"/>
+            </svg>
+            Complete Your Business Profile
+          </div>
+          <p>Update your profile with your latest business information to unlock additional resources.</p>
+        </div>
+        
+        <div class="step">
+          <div class="step-title">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 16.2L4.8 12L3.4 13.4L9 19L21 7L19.6 5.6L9 16.2Z" fill="#f2994a"/>
+            </svg>
+            Schedule a Strategy Session
+          </div>
+          <p>Book a free consultation with our financial advisors to maximize the impact of your funding.</p>
+        </div>
+        
+        <div class="step">
+          <div class="step-title">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 16.2L4.8 12L3.4 13.4L9 19L21 7L19.6 5.6L9 16.2Z" fill="#f2994a"/>
+            </svg>
+            Explore Our Learning Resources
+          </div>
+          <p>Check out our financial management courses specifically designed for women entrepreneurs.</p>
+        </div>
+      </div>
+      
+      <div style="text-align: center;">
+        <a href="{{dashboardUrl}}" class="button">Access Your Dashboard</a>
+      </div>
+      
+      <div class="support-section">
+        <h3>We're Here to Support You</h3>
+        <p>As a valued FemFund member, you now have access to our comprehensive business support services, including:</p>
+        <ul>
+          <li>One-on-one mentoring sessions with industry experts</li>
+          <li>Networking events with fellow women entrepreneurs</li>
+          <li>Business growth workshops and webinars</li>
+          <li>Ongoing financial guidance and planning support</li>
+        </ul>
+      </div>
+      
+      <p>If you have any questions about your funding or would like to learn more about our support services, please contact your dedicated account manager at <a href="mailto:support@femfund.com">support@femfund.com</a> or call us at (555) 123-4567.</p>
+      
+      <p>Here's to your continued success!</p>
+      
+      <p>Best regards,<br>The FemFund Team</p>
+    </div>
+    <div class="footer">
+      <p>© {{currentYear}} FemFund. All rights reserved.</p>
+      <p>123 Financial District, Suite 100, New York, NY 10001</p>
+    </div>
+  </div>
+</body>
+</html>
